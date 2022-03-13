@@ -9,13 +9,6 @@ public class GuessNumberGame {
          *  1- At first, we have to decide a range for the guess number that would be guessed;
          *  2- To input a random number in range;
          *  3- Guess-time should be 0 and decide guess-time count;
-         *  4-
-         *  5-perez kilish ketim sani her ketimda birdin kopiyip mangidu
-         *  6-eger biz perez kilgan san(javap) pukulgen sandin chong bolsa bizge " bek chong bop kaldi" dep uchur beridu
-         *  7-eger biz perez kilgan san(javap) pukulgen sandin kichik bolsa bizge " bek kichik bop kaldi" dep uchur beridu
-         *  8-eger biz perez kilgan san(javap) pukulgen sanga teng bolsa bizge " .....tepiwaldingiz " dep uchur beridu
-         *  9-eger belgilengen perez kilish ketim sani ichide pukulgen sanni togra tapalmisak,
-         *  bizge " oyun ahirtlashti, siz yengildingiz" dep uchur beridu
          */
         System.out.print("please enter the range : ");
         Scanner input = new Scanner(System.in);
