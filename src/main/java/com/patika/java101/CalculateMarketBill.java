@@ -2,7 +2,7 @@ package com.patika.java101;
 
 import java.util.Scanner;
 
-public class CalculateMarketBell {
+public class CalculateMarketBill {
     public static void main(String[] args) {
         /* Fruits and price for per KG
     Pear : 2,14 TL
