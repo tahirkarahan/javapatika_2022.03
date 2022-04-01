@@ -11,7 +11,7 @@ public class CalculateMarketBill {
     Banana: 10,50 TL
     Eggplant : 5,00 TL
     */
-        double pear, apple, tomatoes, banana, eggplant;
+        Double pear, apple, tomatoes, banana, eggplant;
         Scanner input=new Scanner(System.in);
         System.out.print("How much the weight of pear: ");
         pear=input.nextDouble();
@@ -30,7 +30,7 @@ public class CalculateMarketBill {
         eggplant=input.nextDouble();
         double costOfEggplant=5.00*eggplant;
         double total=costOfPear+costOfApple+costOfTomatoes+costOfBanana+costOfEggplant;
-        System.out.print("Total: "+total);
+        System.out.print("Total: "+total + " TL");
 
     }
 }
