@@ -1,4 +1,4 @@
-package com.patika.java101;
+package com.patika.java101.conditionalstatment;
 
 import org.apache.commons.lang3.StringUtils;
 import java.util.Scanner;

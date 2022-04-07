@@ -1,4 +1,4 @@
-package com.patika.java101;
+package com.patika.java101.conditionalstatment;
 
 import java.util.Scanner;
 
@@ -44,21 +44,21 @@ Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %2
         System.out.print("total:" + totalPrice + " TL");
 
         // 2-way
-//        if (age <= 12) {
-//            discountedPrice = normalPrice * 0.5;
-//        }
-//        if (12 < age && age <= 24) {
-//            discountedPrice = normalPrice * 0.1;
-//        }
-//        if (age > 65) {
-//            discountedPrice = normalPrice * 0.3;
-//        }
-//        totalPrice = normalPrice - discountedPrice;
+        if (age <= 12) {
+            discountedPrice = normalPrice * 0.5;
+        }
+        if (12 < age && age <= 24) {
+            discountedPrice = normalPrice * 0.1;
+        }
+        if (age > 65) {
+            discountedPrice = normalPrice * 0.3;
+        }
+        totalPrice = normalPrice - discountedPrice;
 
-//        if (tripType == 2) {
-//            doubleDiscountPrice = totalPrice * 0.2;
-//            totalPrice = (totalPrice - doubleDiscountPrice) * 2;
-//        }
-//        System.out.print("total:" + totalPrice + " TL");
+        if (tripType == 2) {
+            doubleDiscountPrice = totalPrice * 0.2;
+            totalPrice = (totalPrice - doubleDiscountPrice) * 2;
+        }
+        System.out.print("total:" + totalPrice + " TL");
     }
 }

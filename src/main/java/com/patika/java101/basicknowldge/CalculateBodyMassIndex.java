@@ -1,4 +1,4 @@
-package com.patika.java101;
+package com.patika.java101.basicknowldge;
 
 import java.util.Scanner;
 
