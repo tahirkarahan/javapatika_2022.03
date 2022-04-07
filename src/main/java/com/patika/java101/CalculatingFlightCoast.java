@@ -54,8 +54,7 @@ Kişi "Yolculuk Tipini" gidiş dönüş seçmiş ise bilet fiyatı üzerinden %2
 //            discountedPrice = normalPrice * 0.3;
 //        }
 //        totalPrice = normalPrice - discountedPrice;
-//
-//
+
 //        if (tripType == 2) {
 //            doubleDiscountPrice = totalPrice * 0.2;
 //            totalPrice = (totalPrice - doubleDiscountPrice) * 2;
