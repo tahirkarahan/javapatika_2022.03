@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class HomeWork {
     public static void main(String[] args) {
-        int number = 0, count = 0;
+        int number = 0, count = 0, sum=0;
         boolean run = true;
         Scanner input = new Scanner(System.in);
         while (run) {
@@ -13,6 +13,7 @@ public class HomeWork {
             if (number >= 10) {
                 System.out.print("please enter number again:\n");
                 if (number % 4 == 0) {
+                    sum+=number;
                     count++;
                 }
             } else {
@@ -21,5 +22,6 @@ public class HomeWork {
             }
         }
         System.out.println("counts of even numbers and counts of numbers that can be divided to 4 are: " + count);
+        System.out.print("sum= "+sum);
     }
 }
