@@ -2,7 +2,7 @@ package com.patika.java101.loops;
 
 import java.util.Scanner;
 
-public class cCalculateExponentialOfNumbers {
+public class CalculateExponentialOfNumbers {
     public static void main(String[] args) {
         /* m^n
          * eg: 5^3 = 5*5*5
