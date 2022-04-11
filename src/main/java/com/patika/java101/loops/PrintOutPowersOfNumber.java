@@ -12,6 +12,7 @@ public class PrintOutPowersOfNumber {
          * 4^3 = 64              5^3 = 125
          * 4^4 = 256             5^4 = 625
          * 4^5 = 124             5^5 = 3125
+         * .........                ..........
          **/
         int n;
         Scanner input = new Scanner(System.in);
