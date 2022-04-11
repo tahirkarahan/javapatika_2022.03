@@ -9,9 +9,33 @@ public class CombinationsCalculating {
          * Write a program that calculates combinations in Java.
          * Combination formula: C(n,r) = n! / (r! * (n-r)!)
          */
+
         int n, r;
         int factorial1 = 1, factorial2 = 1, factorial3 = 1;
+        double combination;
+
+        //1- way
         Scanner input = new Scanner(System.in);
+        System.out.print("n= ");
+        n = input.nextInt();
+        System.out.print("r= ");
+        r = input.nextInt();
+
+        if (n >= r) {
+
+            for (int i = 1; i <= n; i++) {
+                factorial1 *= i;
+                if (i <= r) factorial2 *= i;
+                if (i <= n - r) factorial3 *= i;
+            }
+
+            combination = factorial1 / (factorial2 * factorial3);
+            System.out.println("C(" + n + "," + r + ") = " + combination);
+
+        } else
+            System.out.println("n should be bigger than r .");
+
+        //2-way
         System.out.print("n= ");
         n = input.nextInt();
         for (int i = 1; i <= n; i++) {
@@ -29,9 +53,10 @@ public class CombinationsCalculating {
         System.out.println(String.format("%d!= %d", n, factorial1));
         System.out.println(String.format("%d!= %d", r, factorial2));
         System.out.println(String.format("(%d-%d)!= %d", n, r, factorial3));
-        double combinationValve = factorial1 / (factorial2 * factorial3);
+        combination = factorial1 / (factorial2 * factorial3);
         System.out.printf("C(n,r)= %d! / (%d! * (%d-%d)!)", n, r, n, r);
-        System.out.printf("=%.2f", combinationValve);
+        System.out.printf("=%.2f", combination);
+
 
     }
 
