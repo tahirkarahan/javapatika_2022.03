@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class CalculateSumOfEachDigit {
     public static void main(String[] args) {
         /* Calculates the sum of the digits of a number.
-        * eg:  6455= 6 + 4 + 5 + 5
+        * eg:  6455= 6 + 4 + 5 + 5 = 20
         * */
         int number;
         Scanner input = new Scanner(System.in);
