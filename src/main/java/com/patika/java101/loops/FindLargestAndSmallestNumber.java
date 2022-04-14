@@ -14,10 +14,11 @@ public class FindLargestAndSmallestNumber {
         for (int i = 1; i <= n; i++) {
             System.out.print(i + ". number: ");
             num = input.nextInt();
-//            if (i == 1) {
-//                min = num;
-//                max = num;
-//            }
+            // if you enter only one number( n=1)
+            if (i == 1) {
+                min = num;
+                max = num;
+            }
             if (num < min) min = num; //comparing each time entered number with smallest one
             if (num > max) max = num; //comparing each time entered number with largest one
         }
