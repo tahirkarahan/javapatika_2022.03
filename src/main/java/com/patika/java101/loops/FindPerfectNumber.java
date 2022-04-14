@@ -9,14 +9,20 @@ public class FindPerfectNumber {
          */
         int n;
         int sum = 0;
+        int loop = 3;
         Scanner input = new Scanner(System.in);
-        System.out.print("Please enter a number:");
-        n = input.nextInt();
-        for (int i = 1; i <= n / 2; i++) {
-            if (n % i == 0)
-                sum += i;
+        while (loop > 0) {
+            System.out.print("Please enter a number:");
+            n = input.nextInt();
+            for (int i = 1; i <= n / 2; i++) {
+                if (n % i == 0)
+                    sum += i;
+            }
+            if (sum == n) System.out.printf("%d is a perfect number\n", n);
+            else System.out.printf("%d is not a perfect number\n", n);
+            loop--;
         }
-        if (sum == n) System.out.printf("%d is a perfect number", n);
-        else System.out.printf("%d is not a perfect number", n);
+        if (loop == 0) System.out.println("it is over!");
+
     }
 }
