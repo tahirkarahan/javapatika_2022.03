@@ -19,6 +19,7 @@ public class EbobAndEkobFinder {
         int n=Math.min(n1, n2);
         //int n = (n1 < n2) ? n1 : n2;
 
+
         // Find out Ebob
         //1-way
 //        for (int i = 1; i <= n; i++) {
