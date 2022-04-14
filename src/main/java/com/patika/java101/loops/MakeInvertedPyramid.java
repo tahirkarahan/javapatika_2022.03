@@ -11,7 +11,7 @@ public class MakeInvertedPyramid {
         // loop for row
         for (int i = 0; i < n; i++) {
             //loop for space (" ")
-            for (int j = 0; j <i; j++) {
+            for (int j = 0; j < i; j++) {
                 System.out.print(" ");
             }
             // loop for ("*")
