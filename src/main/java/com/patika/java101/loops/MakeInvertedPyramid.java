@@ -8,11 +8,14 @@ public class MakeInvertedPyramid {
         Scanner input = new Scanner(System.in);
         System.out.print("please enter row number:"); // n= row number
         n = input.nextInt();
+        // loop for row
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j <n- (n - i); j++) {
+            //loop for space (" ")
+            for (int j = 0; j <i; j++) {
                 System.out.print(" ");
             }
-            for (int k = (2 * n - 2 * i - 1); k > 0; k--) {
+            // loop for ("*")
+            for (int k = 0; k < (2 * n - 2 * i - 1); k++) {
                 System.out.print("*");
             }
             System.out.println();
