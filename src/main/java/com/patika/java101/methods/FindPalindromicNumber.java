@@ -1,7 +1,10 @@
 package com.patika.java101.methods;
 
 public class FindPalindromicNumber {
-    static boolean ısPalindromic(int number) {
+    /* What is Palindrome Number?
+Palindromic numbers are numbers that have the same reading direction when read from both sides.
+example: 1, 4, 8, 99, 101, 363, 4004, 9889....*/
+    static boolean isPalindromic(int number) {
         int temp = number, reverse = 0, lastDigit;
         while (temp != 0) {
            // System.out.println("***********");
@@ -21,7 +24,7 @@ public class FindPalindromicNumber {
     }
 
     public static void main(String[] args) {
-        System.out.println(ısPalindromic(101));
+        System.out.println(isPalindromic(101));
     }
 
 }
