@@ -14,9 +14,9 @@ public class TwoDimensionArray {
         // to print out array using for loop
         for (int i = 0; i < matris.length; i++) {
             for (int j = 0; j < matris[i].length; j++) {
-                // System.out.print(matris[i][j]+ ",");
+                 System.out.print(matris[i][j]+ ",");
             }
-            //System.out.println();
+            System.out.println();
         }
 
         // to print out array using forEach loop
