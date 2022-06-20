@@ -38,10 +38,14 @@ public class ArrayListDemo {
         System.out.println(numList.get(10));
 
         // find out the same elements from the list
-        int n = 6;
+        int max=0;
         int totalCatch = 0;
         for (int numbers : numList) {
-            if (numbers == n)
+            if (max<numbers){
+                max=numbers;
+                totalCatch=1;
+            }
+            else if(numbers==max)
                 totalCatch++;
         }
         System.out.println(String.format("There are %d catches in the array list", totalCatch));
