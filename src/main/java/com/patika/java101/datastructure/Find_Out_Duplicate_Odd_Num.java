@@ -1,4 +1,4 @@
-package com.patika.java101.conditionalstatment;
+package com.patika.java101.datastructure;
 
 import java.util.Arrays;
 
