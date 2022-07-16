@@ -1,4 +1,4 @@
-package com.patika.java102.incapsulation;
+package com.patika.java102.encapsulation;
 
 public class Book {
     private String bookName;
