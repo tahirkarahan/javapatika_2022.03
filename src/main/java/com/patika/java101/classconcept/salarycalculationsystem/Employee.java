@@ -1,5 +1,7 @@
 package com.patika.java101.classconcept.salarycalculationsystem;
 
+import com.github.javafaker.Faker;
+
 public class Employee {
     /*Java'da "Employee" adında fabrika çalışanlarını temsil eden ve metotları ile çalışanların maaşlarını hesaplayan
     bir sınıf yazmalısınız. Bu sınıf 4 nitelik ve 5 metoda sahip olacaktır.
@@ -22,15 +24,13 @@ public class Employee {
     toString() : Çalışana ait bilgileri ekrana bastıracaktır.
      */
     String name;
-    String surName;
     int salary;
     int workHours;
     int hireYear;
 
 
-    public Employee(String name, String surName, int salary, int workHours, int hireYear) {
+    public Employee(String name, int salary, int workHours, int hireYear) {
         this.name = name;
-        this.surName = surName;
         this.salary = salary;
         this.workHours = workHours;
         this.hireYear = hireYear;
@@ -38,9 +38,9 @@ public class Employee {
 
     //calculate tax
     public double tax() {
-        if (this.salary > 1000)
+        if (this.salary > 1000) {
             return salary * 0.03;
-        else
+        } else
             return 0.0;
     }
 
@@ -48,8 +48,8 @@ public class Employee {
     public double bonus() {
         if (workHours > 40) {
             return (this.workHours - 40) * 30;
-        }
-        return 0.0;
+        } else
+            return 0.0;
     }
 
     // raise salary
@@ -69,9 +69,9 @@ public class Employee {
         double bonus = bonus();
         double raiseSalary = raiseSalary(2021);
         double salaryWithTaxAndBonus = this.salary - tax() + bonus();
+
         System.out.println(" ======salary calculation of the employee====");
         return "name : " + this.name +
-                "\nsurName : " + this.surName +
                 "\nsalary : " + this.salary +
                 "\nworkHours : " + this.workHours +
                 "\nhireYear : " + this.hireYear +
